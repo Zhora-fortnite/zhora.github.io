@@ -1,0 +1,353 @@
+*{
+  margin: 0;
+  padding: 0;
+ }
+
+h2 {
+  margin: auto;
+}
+  div {
+    margin-top: 2px;
+    text-align: center;
+  }
+  #container {
+    width: auto;
+  }
+  #header {
+    background: #85D6E5;
+    height: 250px;
+    background-image: url("https://res.cloudinary.com/dfdly5h6p/image/upload/v1605689801/nintendoswitch_fortnite_e3screenshot_1_ihmj0a.jpg");
+  background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #header h2 {
+    font-size: 150px;
+   }
+
+    .nav {
+   background: #30A6E6;
+  }
+  
+   .nav-item {
+     padding: 5px;
+       list-style: none;
+     color: blue;
+     float: left;
+     width: 32%;
+     }
+   .dropdown-item {
+   font-size: 15px;
+   font-weight: 600;
+   text-transform: uppercase;
+  }
+  
+  .nav-link, nav-link:hover {
+   font: bold 14px sans-serif;
+  }
+  #content {
+    background: #85D6E5;
+    float: left;
+    width: 75%;
+    height: 1520px;
+    }
+  #nav{
+   background: #85D6E5;
+    float: left;
+    width: 100%;
+    height: 75px; 
+  }
+  .nav-link{
+    text-decoration: none;
+    font-size: 30px
+  }
+  #sidebar {
+    background: #9fd5fc;
+    float: right;
+    width: 25%;
+    height: 1520px;
+  }
+
+.sidebar-img {
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+  #clear {
+    clear:both;
+  }
+
+footer {
+  background-color: #f2c6f5; 
+}
+
+  .footer {
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;      
+    font-size: 20px;
+    background-color: #f2c6f5; 
+    width: 100%;
+    height: 220px;   
+    padding: 10px;
+    margin-top: 0.1px;
+    margin-bottom: 40px;
+    }
+
+    
+ #nav-footer {
+ height: 270px;
+}
+
+#nav-footer ul{
+ list-style: none;
+}
+
+#nav-footer > ul > li{
+  float: left;
+  width: 277px;
+  position: relative;
+ }
+ 
+#nav-footer li a{
+  display: block;
+  background: #85D6E5;
+  border: 1px solid #060A13;
+  color: #060A13;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+ }
+
+ #nav-footer li a:hover{
+  background: #9fd5fc;
+ }
+
+ #nav-footer li .second{
+  display: none;
+  position: absolute;
+  top: 100%;
+ }
+ 
+#nav-footer li:hover .second{
+ display: block;
+}
+
+#nav-footer li li{
+  width: 277px;
+ }
+
+ .second {
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+ }
+
+ 
+ /* Страничка "обо мне" */
+
+ #about-content {
+  background: -webkit-linear-gradient(left, indigo ,transparent, purple);
+  float: left;
+  width: 75%;
+  height: 1520px;
+  }
+
+
+ .about-content-title {
+margin-top: 30px;
+ }
+
+ .about-content-txt {
+   margin-top: 15px;
+   width: 75%;
+}
+
+.about-img-dog {
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.about-img-basket {
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+
+#about-sidebar {
+  background: purple;
+  float: right;
+  width: 25%;
+  height: 1520px;
+  border-left: 2px solid #ffffff;
+}
+
+
+/* Страничка "Обратная связь" */
+
+#feedback-content {
+  background:	#ffffff;
+  float: left;
+  width: 75%;
+  height: 1520px;
+}
+
+.feedback-title {
+margin-top: 25px;
+color: #323234;
+}
+
+.feedback-number {
+color: #323234;
+}
+
+.feedback-img {
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+
+#feedback-sidebar {
+  background: 	#CDC1C5;
+  float: right;
+  width: 25%;
+  height: 1520px;
+}
+
+/* Bootstrap карусель */
+
+ .embed-responsive {
+  width: 80%;
+  margin: auto;
+}
+
+.carousel-inner {
+  position: relative;
+}
+
+.carousel-control-prev {
+  height: 50px;
+  position: absolute;
+  top: 46%;
+  left: 5%;
+}
+
+
+.carousel-control-next {
+  height: 50px;
+  position: absolute;
+  top: 46%;
+  right: 5%;
+}
+
+.carousel-indicators {
+  width: 200px;
+  position: absolute;
+  left: 25%;
+}
+ 
+/* Бургер-меню */
+
+.hamburger-menu {
+  z-index: 2;
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+
+  width: 26px;
+  height: 26px;
+
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: pink;
+
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  z-index: 1;
+
+  width: 300px;
+  height: 100%;
+
+  margin: 0;
+  padding: 80px 0;
+
+  list-style: none;
+
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+
+  transition-duration: .25s;
+}
+
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+
+  color: #333;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition-duration: .45s;
+}
+
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
